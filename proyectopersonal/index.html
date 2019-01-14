@@ -1,0 +1,124 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Proyecto JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css" />
+    <!--Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</head>
+<body>
+        <section id="contenido">
+        <!--Cabecera-->
+            <header>
+                <div id="logo">
+                    <h4>Proyecto personal JavaScript</h4>
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                         <li><a href="#">Contenido</a></li>
+                        <li><a href="#">Clientes</a></li>
+                        <li><a href="#">Productos</a></li>
+
+                     </ul>  
+                    
+                </nav>
+                
+            </header>
+                <!--Slider-->
+                <div id="slider">
+                    <div class="bxslider">
+                        <div><img src="img/hojas.jpg" title="Funky roots"></div>
+                        <div><img src="img/rojo.jpg" title="The long and winding road"></div>
+                        <div><img src="img/cielo.jpg" title="Happy trees"></div>
+                     </div>
+                </div>
+                <!--Contenido-->
+                <section>
+
+                    <div id="articulos">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet ex nec quam blandit porta. Cras rhoncus libero dapibus ex porta, a elementum felis pellentesque. Quisque ligula turpis, tincidunt eu bibendum sed, malesuada sit amet erat. Aliquam scelerisque diam magna, id finibus sem molestie dignissim. Sed id semper lorem. Nunc convallis nisi non dictum aliquet. Vivamus ultricies, purus quis porttitor sollicitudin, felis justo posuere ex, vitae auctor lorem elit eget dui. Proin et nisl ac justo euismod varius sit amet quis ipsum. Donec vel tellus sit amet dui tempor pellentesque vel vel erat. Integer pretium est neque, eu pharetra enim tincidunt a. Nam ac nunc sed elit venenatis pellentesque at quis lorem. Etiam congue pulvinar mauris ut volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ut sollicitudin diam. Aliquam consectetur lacus ultrices ante tempor suscipit.
+
+                        </p>
+
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet ex nec quam blandit porta. Cras rhoncus libero dapibus ex porta, a elementum felis pellentesque. Quisque ligula turpis, tincidunt eu bibendum sed, malesuada sit amet erat. Aliquam scelerisque diam magna, id finibus sem molestie dignissim. Sed id semper lorem. Nunc convallis nisi non dictum aliquet. Vivamus ultricies, purus quis porttitor sollicitudin, felis justo posuere ex, vitae auctor lorem elit eget dui. Proin et nisl ac justo euismod varius sit amet quis ipsum. Donec vel tellus sit amet dui tempor pellentesque vel vel erat. Integer pretium est neque, eu pharetra enim tincidunt a. Nam ac nunc sed elit venenatis pellentesque at quis lorem. Etiam congue pulvinar mauris ut volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ut sollicitudin diam. Aliquam consectetur lacus ultrices ante tempor suscipit.
+
+                        </p>
+                    </div>
+
+                    <div id="box">
+                        <h2>Formulario de Registro de Clientes</h2>
+                        <form method="POST" id="formulario"> 
+                            <label for="nombres">Nombres:</label>
+                            <input type="text" name="nombres" />
+                            <label for="apellidos">Apellido:</label>
+                            <input type="text" name="apellidos" />
+                            <label for="direccion">Direccion:</label>
+                            <input type="text" name="direccion" />
+                            <label for="correo">Correo:</label>
+                            <input type="email" name="correo" />
+                            <label for="fechareg">Fecha de registro:</label>
+                            <input type="date" name="fechareg" />
+                            <label for="pais">Pais:</label>
+                            <select id="pais" name="pais"></select>
+                            <label for="provincia">Provincia:</label>
+                            <select id="provincia" name="provincia"></select>
+                            <label for="distrito">Distrito:</label>
+                            <select id="distrito" name="distrito"></select>
+           
+                            <br/>
+                            <label for="botton"></label>    
+                            <button id="botton" type="submit" >Registrar</button> 
+                            
+                        </form>
+                    </div>
+                    <br/>
+                    <div id="listado">
+                        <h2>Listado de clientes</h2>
+                        <table id="list">
+                            <thead>
+                                <th>Nombres</th>
+                                <th>Apellidos</th>
+                                <th>Direccion</th>
+                                <th>Correo</th>
+                                <th>Fecha de registro</th>
+                                <th>Pais</th>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+
+                    </div>
+            
+
+                 </section>
+
+        
+         </section>
+        <!--Pie de pagina-->
+     <footer>
+         <h2>Pie de pagina</h2>
+     </footer>
+   
+</body>
+</html>
